@@ -10,13 +10,13 @@ variable "project_name" {
 
 ### SSM VPC ###
 variable "vpc_id" {
-    type = string
+  type = string
 }
 variable "private_subnets" {
-    type = list(string)
+  type = list(string)
 }
 variable "public_subnets" {
-    type = list(string)
+  type = list(string)
 }
 
 ### ECS General ###
