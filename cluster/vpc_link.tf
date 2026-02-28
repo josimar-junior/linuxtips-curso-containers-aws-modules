@@ -99,7 +99,7 @@ resource "aws_lb_listener" "vpclink_https" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.vpclink_https.arn
+    target_group_arn = aws_lb_target_group.vpclink_https[count.index].arn
   }
 }
 
