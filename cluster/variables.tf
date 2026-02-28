@@ -25,3 +25,8 @@ variable "capacity_providers" {
   type    = list(string)
   default = ["FARGATE", "FARGATE_SPOT"]
 }
+
+variable "acm_certs" {
+  type    = list(string)
+  default = []
+}
